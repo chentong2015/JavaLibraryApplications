@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lombok-library" />
+        <module name="sample-exercise" />
+        <module name="command-line" />
+        <module name="csv-library" />
+        <module name="apache-commons" />
+        <module name="json-serializer" />
+        <module name="xml-serializer" />
+        <module name="benchmark-performance" />
+        <module name="metrics-health-check" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
