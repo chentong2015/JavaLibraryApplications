@@ -1,4 +1,4 @@
-package common_config_xml;
+package commons.configuration;
 
 import org.apache.commons.configuration2.XMLConfiguration;
 import org.apache.commons.configuration2.builder.fluent.Configurations;
@@ -7,7 +7,7 @@ import org.apache.commons.configuration2.ex.ConfigurationException;
 import java.util.List;
 
 // 支持对XML配置文件的加载, 根据路径获取标签信息
-public class ApacheCommonConfigXml {
+public class CommonsConfigXmlFile {
 
     public static void main(String[] args) {
         Configurations configs = new Configurations();
@@ -18,6 +18,7 @@ public class ApacheCommonConfigXml {
             String secondPath = config.getString("processing.paths.path(1)");
 
             System.out.println(stage);
+            System.out.println(paths.get(0));
             System.out.println(secondPath);
         } catch (ConfigurationException cex) {
             // Something went wrong

@@ -1,5 +1,6 @@
-????IO?????
+包含工具，集合类以及IO相关的操作
 Expanded libraries that include utility classes, collections, I/O classes...
+
 <dependency>
     <groupId>com.google.guava</groupId>
     <artifactId>guava</artifactId>
