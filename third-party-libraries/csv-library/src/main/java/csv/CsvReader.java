@@ -1,4 +1,4 @@
-package java_io;
+package csv;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,14 +7,15 @@ import java.io.InputStreamReader;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class JavaCsvLoader {
+public class CsvReader {
+
+    // File Classpath 资源文件路径
+    private static String filePath = "sample.csv";
 
     public static void main(String[] args) throws IOException {
-        String resourcePath = "sample.csv";
-        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-        InputStream inputStream = classloader.getResourceAsStream(resourcePath);
-
+        InputStream inputStream = CsvReader.class.getClassLoader().getResourceAsStream(filePath);
         assert inputStream != null;
+
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream))) {
             // 跳过CSV第一行的title
             Stream<String> streams = bufferedReader.lines().skip(1);
