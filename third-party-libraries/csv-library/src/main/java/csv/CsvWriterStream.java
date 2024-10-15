@@ -8,7 +8,7 @@ public class CsvWriterStream {
     private static String filePath = "output.csv";
     private static String lineSeparator = System.getProperty("line.separator");
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         try (FileOutputStream outputStream = new FileOutputStream(filePath);
              BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(outputStream)) {
 
@@ -24,8 +24,6 @@ public class CsvWriterStream {
 
             bufferedOutputStream.write(bytes);
             bufferedOutputStream.flush();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
     }
 }
