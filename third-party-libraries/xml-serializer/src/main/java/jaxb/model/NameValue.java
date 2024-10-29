@@ -1,15 +1,16 @@
-package jaxb.record;
+package jaxb.model;
 
 import jakarta.xml.bind.annotation.*;
 import java.util.List;
 
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-        "firstName",
-        "middleName",
-        "surname",
-})
+// TODO. 配置XML上级的根标签和Property属性的顺序
 @XmlRootElement(name = "NameValue")
+@XmlType(name = "", propOrder = {
+    "firstName",
+    "middleName",
+    "surname",
+})
+@XmlAccessorType(XmlAccessType.FIELD)
 public class NameValue {
 
     @XmlElement(name = "FirstName")

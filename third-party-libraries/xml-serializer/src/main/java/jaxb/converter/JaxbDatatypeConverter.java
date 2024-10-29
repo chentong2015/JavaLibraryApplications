@@ -1,4 +1,4 @@
-package jaxb.utils;
+package jaxb.converter;
 
 import jakarta.xml.bind.DatatypeConverter;
 

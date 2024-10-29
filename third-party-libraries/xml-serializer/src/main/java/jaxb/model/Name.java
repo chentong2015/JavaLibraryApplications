@@ -1,11 +1,11 @@
-package jaxb.record;
+package jaxb.model;
 
 import jakarta.xml.bind.annotation.*;
 import java.util.List;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-        "nameValue"
+    "nameValue"
 })
 @XmlRootElement(name = "Name")
 public class Name {

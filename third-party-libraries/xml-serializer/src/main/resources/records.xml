@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Records>
+<Record>
     <Person id="1" action="todo" date="08-Oct-2022">
         <Gender>Male</Gender>
         <ActiveStatus>Active</ActiveStatus>
+        <Description Id="1" Type="Person">Exposed Person</Description>
         <NameDetails>
             <Name NameType="Name">
                 <NameValue>
@@ -12,4 +13,17 @@
             </Name>
         </NameDetails>
     </Person>
-</Records>
+    <Person id="2" action="test" date="08-Oct-2022">
+        <Gender>Male</Gender>
+        <ActiveStatus>Active</ActiveStatus>
+        <Description Id="1" Type="Person">Exposed Person</Description>
+        <NameDetails>
+            <Name NameType="Name">
+                <NameValue>
+                    <FirstName>test</FirstName>
+                    <Surname>last</Surname>
+                </NameValue>
+            </Name>
+        </NameDetails>
+    </Person>
+</Record>

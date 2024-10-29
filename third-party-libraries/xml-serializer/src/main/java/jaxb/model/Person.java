@@ -1,4 +1,4 @@
-package jaxb.record;
+package jaxb.model;
 
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;
@@ -24,6 +24,7 @@ public class Person {
     @XmlAttribute(name = "date", required = true)
     protected String date;
 
+
     // XmlElement元素的顺序没有影响
     @XmlElement(name = "Gender")
     protected String gender;
@@ -31,8 +32,12 @@ public class Person {
     @XmlElement(name = "ActiveStatus")
     protected String activeStatus;
 
+    @XmlElement(name = "Description")
+    protected Description description;
+
     @XmlElement(name = "NameDetails")
     protected NameDetails nameDetails;
+
 
     public String getResourceName() {
         return resourceName;
@@ -45,6 +50,8 @@ public class Person {
     public String getActiveStatus() {
         return activeStatus;
     }
+
+    public Description getDescription() { return description; }
 
     public NameDetails getNameDetails() {
         return nameDetails;
