@@ -14,9 +14,11 @@
         <module name="apache-commons" />
         <module name="json-serializer" />
         <module name="xml-serializer" />
-        <module name="benchmark-performance" />
-        <module name="metrics-health-check" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="benchmark-performance" target="17" />
+      <module name="metrics-health-check" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
