@@ -4,14 +4,12 @@
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/apache-commons-codec" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/third-party-libraries/apache-commons-codec/Apache Commons Codec.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/apache-commons/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/apache-commons/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/command-line/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/command-line/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/csv-library/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/csv-library/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/third-party-libraries/grova-io" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/grova-io" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/json-serializer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/json-serializer/src/main/resources" charset="UTF-8" />
@@ -24,6 +22,7 @@
     <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/metrics-health-check/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/performance-benchmark/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/performance-benchmark/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../System Networking/WebNetworkingAuthSecurity/encryption/encoder/Commons Codec.txt" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
