@@ -1,10 +1,10 @@
 package jcommander;
 
-public class TestJCommander {
+public class JCommanderDemo {
 
     // Usage: java -jar name.jar [options]
     //  Options:
-    //    -m, -migrate
+    //    -e, -encrypt
     //      Use the specified file
     //    -o, -options
     //      Use the specified file

@@ -7,7 +7,7 @@ import java.io.*;
 import java.text.MessageFormat;
 
 // 用于验证命令行参数的格式
-public class OptionsValidator implements IParameterValidator {
+public class FileLocationValidator implements IParameterValidator {
 
     private static final String EXTENSION_CFG = "cfg";
     private static final String FILE_NOT_FOUND_ERR_MSG = "Specified file ''{0}'' not found";
