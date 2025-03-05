@@ -3,7 +3,7 @@ package jaxb;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
-import jaxb.model.Demo;
+import jaxb.demo.Demo;
 
 // marshal: 将Object编组成指定的document xml文件
 public class XmlMarshallerDemo {

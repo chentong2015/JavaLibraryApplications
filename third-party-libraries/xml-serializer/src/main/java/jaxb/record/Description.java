@@ -1,4 +1,4 @@
-package jaxb.model;
+package jaxb.record;
 
 import jakarta.xml.bind.annotation.*;
 import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;

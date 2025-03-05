@@ -3,8 +3,8 @@ package jaxb;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Unmarshaller;
-import jaxb.model.Person;
-import jaxb.model.Record;
+import jaxb.record.Person;
+import jaxb.record.Record;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
@@ -17,14 +17,11 @@ public class XmlUnMarshallerDemo {
     public static void main(String[] args) throws Exception {
         ClassLoader classLoader = XmlUnMarshallerDemo.class.getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream("records.xml");
-        readXml(inputStream, Record.class);
-    }
 
-    public static void readXml(InputStream inputStream, Class<?> clazz) throws XMLStreamException, JAXBException {
         XMLInputFactory inputFactory = XMLInputFactory.newInstance();
         XMLStreamReader reader = inputFactory.createXMLStreamReader(inputStream);
 
-        JAXBContext context = JAXBContext.newInstance(clazz);
+        JAXBContext context = JAXBContext.newInstance(Record.class);
         Unmarshaller unmarshaller = context.createUnmarshaller();
 
         Record record = (Record) unmarshaller.unmarshal(reader);

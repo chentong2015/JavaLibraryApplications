@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:element name="records">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="record"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="record">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">documentation</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation xml:lang="en">documentation</xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+                <xs:element ref="person"/>
+                <xs:element ref="details"/>
+            </xs:sequence>
+            <xs:attribute name="category" type="xs:string"/>
+            <xs:attribute name="editor" type="xs:string"/>
+            <xs:attribute name="entered" type="wdate"/>
+            <xs:attribute name="sub-category" type="xs:string"/>
+            <xs:attribute name="uid" type="xs:unsignedInt" use="required"/>
+            <xs:attribute name="updated" type="wdate"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="person">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" minOccurs="0" nillable="true" type="xs:string"/>
+                <xs:element name="position" minOccurs="0" nillable="true" type="xs:string"/>
+                <xs:element ref="names"/>
+                <xs:element ref="agedata"/>
+            </xs:sequence>
+            <xs:attribute name="e-i">
+                <xs:simpleType>
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">documentation</xs:documentation>
+                    </xs:annotation>
+                    <xs:union>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <xs:enumeration value="I"/>
+                                <xs:enumeration value="E"/>
+                                <xs:enumeration value="M"/>
+                                <xs:enumeration value="F"/>
+                                <xs:enumeration value="U"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value=""/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:union>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="ssn" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="names">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="first_name" minOccurs="0"/>
+                <xs:element ref="last_name" minOccurs="0"/>
+                <xs:element ref="aliases" minOccurs="0"/>
+                <xs:element ref="alternative_spelling" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="first_name" nillable="true" type="xs:string"/>
+    <xs:element name="last_name" type="xs:string"/>
+
+    <xs:element name="aliases">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="alias"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="alias" nillable="true" type="xs:string"/>
+    <xs:element name="alternative_spelling" nillable="true" type="xs:string"/>
+
+    <xs:simpleType name="wdate">
+        <xs:union memberTypes="wdate_restr">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">documentation</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value=""/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+
+    <xs:element name="agedata">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">documentation</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="age" minOccurs="0" nillable="true" type="xs:unsignedByte" />
+                <xs:element name="as_of_date" minOccurs="0" nillable="true" type="wdate_restr"/>
+                <xs:element ref="dob" minOccurs="0"/>
+                <xs:element ref="dobs" minOccurs="0"/>
+                <xs:element name="deceased" minOccurs="0" nillable="true" type="wdate"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="dobs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="dob"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="dob" nillable="true" type="wdate_restr"/>
+
+    <xs:simpleType name="wdate_restr">
+        <xs:union memberTypes="xs:date">
+            <xs:simpleType>
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">documentation</xs:documentation>
+                </xs:annotation>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="(18|19|20)[0-9]{2}\-((((0[1-9])|10|11|12)\-00)|(00-00))"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+
+    <xs:element name="details">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="further_information" minOccurs="0"/>
+                <xs:element ref="passports" minOccurs="0"/>
+                <xs:element ref="id_numbers" minOccurs="0"/>
+                <xs:element ref="place_of_birth" minOccurs="0"/>
+                <xs:element ref="locations" minOccurs="0"/>
+                <xs:element ref="countries" minOccurs="0"/>
+                <xs:element ref="citizenships" minOccurs="0"/>
+                <xs:element ref="companies" minOccurs="0"/>
+                <xs:element ref="linked_to" minOccurs="0"/>
+                <xs:element ref="keywords" minOccurs="0"/>
+                <xs:element ref="external_sources" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="further_information" nillable="true" type="xs:string"/>
+
+    <xs:element name="passports">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="passport"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="passport" nillable="true">
+        <xs:complexType mixed="true">
+            <xs:attribute name="country" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="id_numbers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="id"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="id" nillable="true">
+        <xs:complexType mixed="true">
+            <xs:attribute name="loc" type="xs:string"/>
+            <xs:attribute name="type" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="place_of_birth" nillable="true" type="xs:string"/>
+
+    <xs:element name="locations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="location"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="location" nillable="true">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">documentation</xs:documentation>
+        </xs:annotation>
+        <xs:complexType mixed="true">
+            <xs:attribute name="city" type="xs:string" use="required"/>
+            <xs:attribute name="country" type="xs:string" use="required"/>
+            <xs:attribute name="state" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="countries">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="country" nillable="true" type="xs:string">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">documentation</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:element name="companies">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="company"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="company" nillable="true" type="xs:string"/>
+
+    <xs:element name="linked_to">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="uid"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="uid" nillable="true" type="xs:unsignedInt"/>
+
+    <xs:element name="keywords">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="keyword"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="keyword" nillable="true" type="xs:string"/>
+
+    <xs:element name="external_sources">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="uri"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="uri" nillable="true" type="xs:string">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">documentation</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:element name="citizenships">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="citizenship" nillable="true" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

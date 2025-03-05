@@ -1,4 +1,4 @@
-package jaxb.model;
+package jaxb.demo;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
 

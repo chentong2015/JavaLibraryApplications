@@ -1,4 +1,4 @@
-package jaxb.model;
+package jaxb.record;
 
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;

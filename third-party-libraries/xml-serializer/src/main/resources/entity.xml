@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO. 标注XML文件所使用的XSD格式定义文件 -->
+<records xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="entity.xsd">
+    <record category="INDIVIDUAL" editor="" entered="2000-11-27" sub-category="PEP" uid="6358" updated="2023-11-29">
+        <person ssn="" e-i="M">
+            <title>Prof</title>
+            <position>Position</position>
+            <names>
+                <first_name>David Alistair</first_name>
+                <last_name>KEMP</last_name>
+                <aliases>
+                    <alias>KEMP,David</alias>
+                </aliases>
+                <alternative_spelling xsi:nil="true"/>
+            </names>
+            <agedata>
+                <age xsi:nil="true"/>
+                <as_of_date xsi:nil="true"/>
+                <dob>1941-10-14</dob>
+                <dobs>
+                    <dob>1941-10-14</dob>
+                </dobs>
+                <deceased xsi:nil="true"/>
+            </agedata>
+        </person>
+        <details>
+            <further_information>further information reported.</further_information>
+            <passports>
+                <passport country="" xsi:nil="true"/>
+            </passports>
+            <id_numbers>
+                <id xsi:nil="true"/>
+            </id_numbers>
+            <place_of_birth>Melbourne, Victoria, Australia</place_of_birth>
+            <locations>
+                <location country="AUSTRALIA" city="Parkes" state="Australian Capital Territory" xsi:nil="true"/>
+            </locations>
+            <countries>
+                <country>AUSTRALIA</country>
+            </countries>
+            <citizenships>
+                <citizenship>AUSTRALIA</citizenship>
+            </citizenships>
+            <companies>
+                <company>4421908</company>
+                <company>8899</company>
+            </companies>
+            <linked_to>
+                <uid>710200</uid>
+                <uid>710201</uid>
+            </linked_to>
+            <keywords>
+                <keyword xsi:nil="true"/>
+            </keywords>
+            <external_sources>
+                <uri>http://www.xxx.gov.au/demo.xml</uri>
+                <uri>https://www.xxx.com.au/test.html</uri>
+            </external_sources>
+        </details>
+    </record>
+</records>
