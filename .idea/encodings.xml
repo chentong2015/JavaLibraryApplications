@@ -10,7 +10,6 @@
     <file url="file://$PROJECT_DIR$/third-party-libraries/command-line/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/csv-library/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/csv-library/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/third-party-libraries/grova-io" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/json-serializer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/json-serializer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/lombok-library/src/main/java" charset="UTF-8" />
@@ -18,6 +17,9 @@
     <file url="file://$PROJECT_DIR$/third-party-libraries/xml-serializer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-libraries/xml-serializer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third-party-others" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/third-party-others/grova-io" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/work-projects/license-library/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/work-projects/license-library/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/metrics-health-check/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/metrics-health-check/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/performance-benchmark/src/main/java" charset="UTF-8" />

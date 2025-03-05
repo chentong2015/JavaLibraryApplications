@@ -12,6 +12,7 @@
         <module name="command-line" />
         <module name="csv-library" />
         <module name="apache-commons" />
+        <module name="license-library" />
         <module name="json-serializer" />
         <module name="xml-serializer" />
       </profile>
