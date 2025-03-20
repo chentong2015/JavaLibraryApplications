@@ -11,8 +11,8 @@ public class XmlMarshallerDemo {
     public static void main(String[] args) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(Demo.class);
         Marshaller marshaller = context.createMarshaller();
-
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
         Demo person = new Demo("chen", "victor");
         marshaller.marshal(person, System.out);
     }
