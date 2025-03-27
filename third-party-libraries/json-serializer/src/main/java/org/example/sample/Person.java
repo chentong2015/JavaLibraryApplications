@@ -1,4 +1,4 @@
-package org.example.demo;
+package org.example.sample;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

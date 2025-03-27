@@ -1,4 +1,4 @@
-package org.example.demo;
+package org.example.sample;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -12,6 +12,7 @@ import static java.util.Objects.requireNonNull;
 public class MyInstance {
 
     private final String name;
+
     // TODO. 如果是Web请求返回的JSON格式的数据，如果和这里的字段不匹配
     //  则jackson在解析json成object的时候，是无法完成构造的 !!
     //  必须严格的保证设计上的POJOs一致性

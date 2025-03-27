@@ -1,10 +1,10 @@
-package org.example.demo;
+package org.example.sample;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.List;
 
-public class TestJsonObjects {
+public class TestJsonProperty {
 
     // 2.10以前低版本的APIs
     // JsonMapper jsonMapper = new JsonMapper();

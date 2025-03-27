@@ -1,4 +1,4 @@
-package org.example.demo.properties;
+package org.example.properties;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
