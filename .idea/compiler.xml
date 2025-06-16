@@ -8,18 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lombok-library" />
-        <module name="sample-exercise" />
         <module name="command-line" />
         <module name="csv-library" />
         <module name="apache-commons" />
+        <module name="java-reflections-entity-parser" />
         <module name="license-library" />
         <module name="json-serializer" />
         <module name="xml-serializer" />
+        <module name="java-reflections" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="benchmark-performance" target="17" />
       <module name="metrics-health-check" target="17" />
+      <module name="template-exercise" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

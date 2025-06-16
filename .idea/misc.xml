@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/benchmark-performance/pom.xml" />
         <option value="$PROJECT_DIR$/work-projects/sample-exercise/pom.xml" />
         <option value="$PROJECT_DIR$/work-projects/license-library/pom.xml" />
+        <option value="$PROJECT_DIR$/work-projects/java-reflections/pom.xml" />
+        <option value="$PROJECT_DIR$/work-projects/java-reflections-entity-parser/pom.xml" />
       </list>
     </option>
   </component>

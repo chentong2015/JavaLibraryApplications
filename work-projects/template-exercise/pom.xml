@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>sample-exercise</artifactId>
+    <artifactId>template-exercise</artifactId>
     <version>1.0.0</version>
 
     <properties>
