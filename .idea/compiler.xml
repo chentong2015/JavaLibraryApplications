@@ -21,7 +21,6 @@
     <bytecodeTargetLevel>
       <module name="benchmark-performance" target="17" />
       <module name="metrics-health-check" target="17" />
-      <module name="template-exercise" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
