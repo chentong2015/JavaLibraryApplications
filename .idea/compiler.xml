@@ -9,15 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lombok-library" />
         <module name="command-line" />
-        <module name="csv-library" />
         <module name="apache-commons" />
         <module name="java-reflections-entity-parser" />
         <module name="license-library" />
-        <module name="json-serializer" />
-        <module name="xml-serializer" />
+        <module name="xml" />
+        <module name="csv" />
         <module name="template-exercise" />
+        <module name="json" />
         <module name="java-reflections" />
-        <module name="common-libraries" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

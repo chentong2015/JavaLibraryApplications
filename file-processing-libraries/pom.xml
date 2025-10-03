@@ -10,11 +10,8 @@
     <artifactId>file-processing-libraries</artifactId>
 
     <modules>
-        <module>json-serializer</module>
-        <module>xml-serializer</module>
-        <module>csv-library</module>
-        <module>apache-commons</module>
-        <module>lombok-library</module>
-        <module>command-line</module>
+        <module>json</module>
+        <module>xml</module>
+        <module>csv</module>
     </modules>
 </project>
