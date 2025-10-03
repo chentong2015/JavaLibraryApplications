@@ -15,7 +15,9 @@
         <module name="license-library" />
         <module name="json-serializer" />
         <module name="xml-serializer" />
+        <module name="template-exercise" />
         <module name="java-reflections" />
+        <module name="common-libraries" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

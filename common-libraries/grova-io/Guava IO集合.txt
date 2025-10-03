@@ -1,4 +1,4 @@
-包含工具，集合类以及IO相关的操作
+集合工具类以及IO相关操作, 避免重复造轮子
 Expanded libraries that include utility classes, collections, I/O classes...
 
 <dependency>

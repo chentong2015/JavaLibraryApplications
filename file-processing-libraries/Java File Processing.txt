@@ -1,0 +1,5 @@
+TODO. 课程录制: Java File Processing 文件处理
+
+File Processing Performance
+1. 如果需要处理的文件数据量过大: 使用Batch并发执行
+2. 如果处理的单个文件过大: 拆分文件再Batch批量处理
