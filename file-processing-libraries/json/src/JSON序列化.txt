@@ -5,3 +5,6 @@ Object到Json转换和序列化
 2. GSON
 3. JSON.simple
 4. Fastjson
+
+Json 转换对象的注解: 自定义解析的映射关系
+https://www.baeldung.com/jackson-annotations#3-jsonpropertyorder

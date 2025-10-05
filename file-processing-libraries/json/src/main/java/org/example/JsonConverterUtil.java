@@ -9,6 +9,11 @@ import com.fasterxml.jackson.databind.json.JsonMapper;
 import jakarta.xml.bind.JAXBElement;
 import java.text.DateFormat;
 
+// 2.10以前低版本的APIs
+// JsonMapper jsonMapper = new JsonMapper();
+// jsonMapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
+// jsonMapper.configure(MapperFeature.SORT_PROPERTIES_ALPHABETICALLY, true);
+// jsonMapper.addMixIn(JAXBElement.class, JAXBElementMixIn.class);
 public class JsonConverterUtil {
 
     // TODO. JsonMapper通过继承和Builder模式构建ObjectMapper类型API
@@ -18,17 +23,23 @@ public class JsonConverterUtil {
     // 1. Making JSON serializer ignore null and empty objects
     // 2. Specifying object properties serialization order
     // 3. Unwrapping JAXBElement object
-    private JsonConverterUtil() {
+    public JsonConverterUtil() {
         jsonMapper = JsonMapper.builder()
                 .serializationInclusion(JsonInclude.Include.NON_EMPTY)
                 .configure(MapperFeature.SORT_PROPERTIES_ALPHABETICALLY, true)
                 .addMixIn(JAXBElement.class, JAXBElementMixIn.class)
                 .build();
+        // Configuring the default DateFormat to use
+        // when serializing time values as Strings, and deserializing from JSON Strings.
         jsonMapper.setDateFormat(DateFormat.getDateInstance());
     }
 
-    public static JsonConverterUtil getInstance() {
-        return new JsonConverterUtil();
+    public String toJson(Object object) {
+        try {
+            return jsonMapper.writeValueAsString(object);
+        } catch (JsonProcessingException ex) {
+            throw new RuntimeException(ex);
+        }
     }
 
     public JsonConverterUtil ignore(Class<?> type) {
@@ -43,18 +54,6 @@ public class JsonConverterUtil {
 
     private void addMixIn(Class<?> target, Class<?> mixInSource) {
         jsonMapper.addMixIn(target, mixInSource);
-    }
-
-    public String toJson(Object object) {
-        return toCleanJson(object);
-    }
-
-    private String toCleanJson(Object object) {
-        try {
-            return jsonMapper.writeValueAsString(object);
-        } catch (JsonProcessingException ex) {
-            throw new RuntimeException(ex);
-        }
     }
 
     @JsonIgnoreType
