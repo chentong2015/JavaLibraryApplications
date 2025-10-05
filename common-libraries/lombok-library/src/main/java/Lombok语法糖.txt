@@ -1,0 +1,15 @@
+TODO. Lombok语法糖: 编译时自动的生成基本方法
+
+@NoArgsConstructor: 生成无参构造器
+@RequiredArgsConstructor: 生成带指定参数的构造器
+
+@Getter: 生成标准getter方法, getFieldName(), isFieldName()
+@Setter: 生成标准setter方法, setFieldName()
+
+@EqualsAndHashCode: 自动生成equals(), hashCode()方法, 重写equals()必须重写hashCode()
+@EqualsAndHashCode(of = "id") 基于某个字段来比较对象
+@EqualsAndHashCode(of = {"id", "title"})
+
+@ToString: 生成标准toString()方法
+
+@slf4j: 生成属性private static SLF4J Logger log = LoggerFactory.getLogger(ClassName);

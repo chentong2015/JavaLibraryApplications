@@ -1,8 +1,0 @@
-集合工具类以及IO相关操作, 避免重复造轮子
-Expanded libraries that include utility classes, collections, I/O classes...
-
-<dependency>
-    <groupId>com.google.guava</groupId>
-    <artifactId>guava</artifactId>
-    <version>32.0.1-jre</version>
-</dependency>
