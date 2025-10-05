@@ -15,7 +15,7 @@ public class DemoClass {
         this.value2 = value2;
     }
 
-    // TODO. JSON Mapper会默认对is方法的名称视为一个属性, 生成到JSON字段
+    // TODO. JSON Mapper会将is方法EmptyName视为属性名称, 生成到JSON字段
     public boolean isEmptyName() {
         return this.name == null;
     }
