@@ -1,4 +1,6 @@
 TODO. 课程录制: Java File Processing 文件处理
+项目设计: 通过web页面提供文件的上传，处理，提供下载链接
+(进阶扩展，提供批量文件的上传处理，异步等待结果的返回)
 
 File Processing Performance
 1. 如果需要处理的文件数据量过大: 使用Batch并发执行
