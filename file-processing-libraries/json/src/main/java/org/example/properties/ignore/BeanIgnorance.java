@@ -1,4 +1,4 @@
-package org.example.example;
+package org.example.properties.ignore;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -11,13 +11,13 @@ import static java.util.Objects.requireNonNull;
 // TODO. Web请求返回的JSON格式数据，必须保证设计上的POJOs一致性
 //  反之jackson在解析json成object的时候，是无法完成构造的 !!
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class MyInstance {
+public class BeanIgnorance {
 
     private final String name;
     private final List<String> services;
 
     @JsonCreator
-    public MyInstance(@JsonProperty("name") final String name, @JsonProperty("services") List<String> services) {
+    public BeanIgnorance(@JsonProperty("name") final String name, @JsonProperty("services") List<String> services) {
         this.name = requireNonNull(name);
         this.services = requireNonNull(services);
     }

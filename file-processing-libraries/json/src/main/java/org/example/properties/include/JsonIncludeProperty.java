@@ -1,4 +1,4 @@
-package org.example.properties;
+package org.example.properties.include;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;

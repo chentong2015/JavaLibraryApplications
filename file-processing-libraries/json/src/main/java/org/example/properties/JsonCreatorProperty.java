@@ -25,9 +25,8 @@ public class JsonCreatorProperty {
     }
 
     public static void main(String[] args) throws JsonProcessingException {
-        String jsonInput = "{\n" +
-                "   \"code\": \"1234\",\n" +
-                "   \"message\": \"this is a test\"\n" +
+        String jsonInput = "{\"code\": \"1234\",\n" +
+                "  \"message\": \"this is a test\"\n" +
                 "}";
         JsonMapper jsonMapper = new JsonMapper();
         JsonCreatorProperty object = jsonMapper.readValue(jsonInput, JsonCreatorProperty.class);

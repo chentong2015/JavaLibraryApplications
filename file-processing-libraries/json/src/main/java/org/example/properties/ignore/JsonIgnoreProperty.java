@@ -1,4 +1,4 @@
-package org.example.properties;
+package org.example.properties.ignore;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

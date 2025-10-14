@@ -1,18 +1,18 @@
-package org.example.example;
+package org.example.properties.include;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class MyJsonInstance {
+public class CustomComp {
 
     private final String name;
     private final String namespace;
-    private MyJsonComponent component;
+    private Component component;
 
     @JsonCreator
-    public MyJsonInstance(@JsonProperty("name") final String name,
-                          @JsonProperty("namespace") String namespace,
-                          @JsonProperty("component") MyJsonComponent component) {
+    public CustomComp(@JsonProperty("name") final String name,
+                      @JsonProperty("namespace") String namespace,
+                      @JsonProperty("component") Component component) {
         this.name = name;
         this.namespace = namespace;
         this.component = component;
@@ -33,7 +33,8 @@ public class MyJsonInstance {
         return namespace;
     }
 
-    public MyJsonComponent getComponent() {
+    public Component getComponent() {
         return component;
     }
+
 }
