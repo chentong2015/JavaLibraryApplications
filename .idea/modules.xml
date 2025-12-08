@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaLibraryApplications.iml" filepath="$PROJECT_DIR$/JavaLibraryApplications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file-processing-libraries/file-processing-libraries.iml" filepath="$PROJECT_DIR$/file-processing-libraries/file-processing-libraries.iml" />
     </modules>
   </component>
 </project>
