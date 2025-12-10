@@ -15,6 +15,7 @@ import java.nio.file.Paths;
 public class ZipFileUtil {
 
     public static void main(String[] args) throws IOException {
+        // 压缩前确保结果目录存在
         Path srcFile = Paths.get("common-libraries/apache-commons/workfolder");
         Path zipFile = Paths.get("common-libraries/apache-commons/workzip/archive.zip");
 
