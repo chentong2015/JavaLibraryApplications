@@ -8,7 +8,6 @@
         <artifactId>common-libraries</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <artifactId>apache-commons</artifactId>
 
     <properties>
@@ -17,33 +16,41 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- TODO. Apache Commons Libraries 依赖版本需要保证兼容性 -->
     <dependencies>
+        <!-- TODO. Java IO 操作相关的APIs
+        IO Utility classes, stream implementations, file filters, file comparators -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.17.0</version>
         </dependency>
-
-        <!-- IO Utility classes, stream implementations, file filters, file comparators -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.14.0</version>
+            <version>3.18.0</version>
         </dependency>
 
-        <!-- 提供.config配置文件的读取 -->
+        <!-- TODO. .config配置文件读取 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-configuration2</artifactId>
-            <version>2.11.0</version>
+            <version>2.13.0</version>
         </dependency>
 
-        <!-- BeanUtils provides flexible wrapper around reflection and introspection. -->
+        <!-- TODO. Java Bean 保证和反射操作
+        BeanUtils provides flexible wrapper around reflection and introspection. -->
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
-            <version>1.9.4</version>
+            <version>1.11.0</version>
+        </dependency>
+
+        <!-- TODO. 文件压缩和解压缩操作
+        API for working with compression and archive formats. -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>1.28.0</version>
         </dependency>
     </dependencies>
 </project>

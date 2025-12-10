@@ -5,7 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
 
-public class ApacheCommonLang {
+public class ApacheCommonsLang {
 
     // TODO. StringUtils提供常见的String处理的APIs
     public static void main(String[] args) {
