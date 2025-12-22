@@ -11,7 +11,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-public class JsonTreeNodeDemo {
+public class JsonTreeNode {
 
     private static String value = "{\n" +
             "   \"displayName\":\"The Hello\",\n" +
