@@ -13,5 +13,6 @@
         <module>json</module>
         <module>xml</module>
         <module>csv</module>
+        <module>zip</module>
     </modules>
 </project>

@@ -44,13 +44,5 @@
             <artifactId>commons-beanutils</artifactId>
             <version>1.11.0</version>
         </dependency>
-
-        <!-- TODO. 文件压缩和解压缩操作
-        API for working with compression and archive formats. -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-compress</artifactId>
-            <version>1.28.0</version>
-        </dependency>
     </dependencies>
 </project>

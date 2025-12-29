@@ -1,0 +1,9 @@
+Zip File System: .zip or .jar
+Zip File system uses "jar:file" scheme
+
+Zip FileSystem 使用规范:
+1. FileSystem在打开resource之后需要将其关闭
+2. 自定义设置Filesystems配置参数
+3. 同时刻不能在同URL上newFileSystem()创建两次
+
+https://docs.oracle.com/javase/8/docs/technotes/guides/io/fsp/zipfilesystemprovider.html

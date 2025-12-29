@@ -16,8 +16,8 @@ public class ZipFileUtil {
 
     public static void main(String[] args) throws IOException {
         // 压缩前确保结果目录存在
-        Path srcFile = Paths.get("common-libraries/apache-commons/workfolder");
-        Path zipFile = Paths.get("common-libraries/apache-commons/workzip/archive.zip");
+        Path srcFile = Paths.get("file-processing-libraries/zip/workfolder");
+        Path zipFile = Paths.get("file-processing-libraries/zip/workzip/archive.zip");
 
         try (ZipArchiveOutputStream zipOut = new ZipArchiveOutputStream(Files.newOutputStream(zipFile))) {
             File src = srcFile.toFile();

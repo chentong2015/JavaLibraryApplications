@@ -15,8 +15,8 @@ import java.util.Enumeration;
 public class UnzipFileUtil {
 
     public static void main(String[] args) throws IOException {
-        File zipFile = new File("common-libraries/apache-commons/workzip/archive.zip");
-        File targetDir = new File("common-libraries/apache-commons/workunzip");
+        File zipFile = new File("file-processing-libraries/zip/workzip/archive.zip");
+        File targetDir = new File("file-processing-libraries/zip/workunzip");
         if (!targetDir.exists()) {
             targetDir.mkdirs();
         }
