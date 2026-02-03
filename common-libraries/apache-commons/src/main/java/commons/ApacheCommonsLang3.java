@@ -2,12 +2,13 @@ package commons;
 
 import org.apache.commons.lang3.SerializationUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.SystemUtils;
 
 import java.io.Serializable;
 
-public class ApacheCommonsLang {
+public class ApacheCommonsLang3 {
 
-    // TODO. StringUtils提供常见的String处理的APIs
+    // TODO. StringUtils 提供常见的String处理的APIs
     public static void main(String[] args) {
         System.out.println(StringUtils.isBlank(null));
         System.out.println(StringUtils.isEmpty(""));
@@ -19,7 +20,26 @@ public class ApacheCommonsLang {
         StringUtils.stripToEmpty("abc ");
     }
 
-    // TODO. SerializationUtils: 对象的序列化和反序列化
+    // TODO. SystemUtils OS系统属性相关信息
+    public static String getOsName() {
+        String osName = "UNKNOWN";
+        if (SystemUtils.IS_OS_WINDOWS) {
+            osName = "WIN32";
+        } else if (SystemUtils.IS_OS_LINUX) {
+            osName = "LINUX";
+        } else if (SystemUtils.IS_OS_AIX) {
+            osName = "AIX";
+        } else if (SystemUtils.IS_OS_HP_UX) {
+            osName = "HPUX";
+        } else if (SystemUtils.IS_OS_SUN_OS) {
+            osName = "SOLARIS";
+        } else if (SystemUtils.IS_OS_MAC) {
+            osName = "osx";
+        }
+        return osName;
+    }
+
+    // TODO. SerializationUtils 对象的序列化和反序列化
     public void testSerializationUtils() {
         User user = new User(1, "test");
         byte[] data = SerializationUtils.serialize(user);
