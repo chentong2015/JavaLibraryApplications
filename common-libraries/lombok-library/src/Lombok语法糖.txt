@@ -1,4 +1,5 @@
-TODO. Lombok语法糖: 编译时自动的生成基本方法
+TODO. Lombok语法糖
+编译时自动的生成基本方法, 过度使用将影响代码阅读
 
 @NoArgsConstructor: 生成无参构造器
 @RequiredArgsConstructor: 生成带指定参数的构造器
@@ -12,4 +13,5 @@ TODO. Lombok语法糖: 编译时自动的生成基本方法
 
 @ToString: 生成标准toString()方法
 
-@slf4j: 生成属性private static SLF4J Logger log = LoggerFactory.getLogger(ClassName);
+@slf4j: 生成私有日志属性
+private static SLF4J Logger log = LoggerFactory.getLogger(ClassName);
