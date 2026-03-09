@@ -5,8 +5,8 @@ Object到Json转换和序列化
 2. JSON.simple
 3. Fastjson
 4. Jackson
-   Spring Boot默认引入
-   JsonProperty属性配置 www.baeldung.com/jackson-annotations#3-jsonpropertyorder
+   Spring Boot引入, 提供默认序列化转换
+   www.baeldung.com/jackson-annotations#3-jsonpropertyorder
 
    Jackson安全问题: CVE-2026-29062 使用超过最大深度的JSON文件可能造成StackOverflowError
    From version 3.0.0 to before version 3.1.0,
