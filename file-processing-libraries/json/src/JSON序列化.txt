@@ -1,10 +1,16 @@
 www.json.org/json-zh.html
 
 Object到Json转换和序列化
-1. Jackson => Spring Boot自带Jackson类库
-2. GSON
-3. JSON.simple
-4. Fastjson
+1. GSON
+2. JSON.simple
+3. Fastjson
+4. Jackson
+   Spring Boot默认引入
+   JsonProperty属性配置 www.baeldung.com/jackson-annotations#3-jsonpropertyorder
 
-Json 转换对象的注解: 自定义解析的映射关系
-https://www.baeldung.com/jackson-annotations#3-jsonpropertyorder
+   Jackson安全问题: CVE-2026-29062 使用超过最大深度的JSON文件可能造成StackOverflowError
+   From version 3.0.0 to before version 3.1.0,
+   the UTF8DataInputJsonParser, which is used when parsing from a java.io.DataInput source,
+   bypasses the maxNestingDepth constraint (default: 500) defined in StreamReadConstraints.
+   This allows a user to supply a JSON document with excessive nesting,
+   which can cause a StackOverflowError when the structure is processed, leading to a Denial of Service (DoS).
