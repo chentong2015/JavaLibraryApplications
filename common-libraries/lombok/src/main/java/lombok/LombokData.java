@@ -2,7 +2,7 @@ package lombok;
 
 import java.time.LocalDate;
 
-// 声明标准的POJO类型, 等效于添加如下注解
+// @Data 声明完整POJO类型, 等效如下注解:
 // @Getter @Setter @RequiredArgsConstructor @ToString @EqualsAndHashCode.
 @Data
 public class LombokData {

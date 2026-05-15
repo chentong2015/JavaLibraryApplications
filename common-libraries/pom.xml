@@ -14,7 +14,7 @@
 
     <modules>
         <module>apache-commons</module>
-        <module>lombok-library</module>
+        <module>lombok</module>
         <module>command-line</module>
     </modules>
 
