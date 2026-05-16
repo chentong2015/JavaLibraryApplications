@@ -14,7 +14,6 @@
         <module name="license-library" />
         <module name="xml" />
         <module name="csv" />
-        <module name="template-exercise" />
         <module name="json" />
         <module name="java-reflections" />
         <module name="lombok" />
@@ -22,7 +21,14 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="benchmark-performance" target="17" />
+      <module name="csv-library" target="17" />
+      <module name="interview-game" target="11" />
+      <module name="json-serializer" target="17" />
+      <module name="lombok-library" target="17" />
       <module name="metrics-health-check" target="17" />
+      <module name="sample-exercise" target="11" />
+      <module name="third-party-libraries" target="1.5" />
+      <module name="xml-serializer" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

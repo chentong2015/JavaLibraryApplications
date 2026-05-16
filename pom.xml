@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>common-libraries</module>
-        <module>file-processing-libraries</module>
+        <module>file-libraries</module>
     </modules>
 
     <properties>
