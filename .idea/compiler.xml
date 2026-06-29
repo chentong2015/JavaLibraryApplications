@@ -12,7 +12,6 @@
         <module name="apache-commons" />
         <module name="java-reflections-entity-parser" />
         <module name="xml" />
-        <module name="license-library" />
         <module name="csv" />
         <module name="interview-game" />
         <module name="json" />
@@ -25,6 +24,7 @@
       <module name="csv-library" target="17" />
       <module name="file-processing-libraries" target="1.5" />
       <module name="json-serializer" target="17" />
+      <module name="license-library" target="17" />
       <module name="lombok-library" target="17" />
       <module name="metrics-health-check" target="17" />
       <module name="sample-exercise" target="11" />
